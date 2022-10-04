@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>桃園旅遊趣</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="jquery.js"></script>
+<script src="script.js"></script> 
+<script src="script-detil.js"></script> 
+</head>
+<body class="body-area">
+    <div class="div-main-area ">
+        <!-- 標頭區start -->
+        <div class="header-img-back">
+            <span><a href="./index.html">桃園旅遊趣</a></span>
+            <ul class="div-user-log">
+                <li class="user-log-list"><a href="http://localhost/0923_1_travel/06_add.php" class="user-log-text">註冊</a></li>
+                <li class="user-log-list"><a href="http://localhost/0923_1_travel/log/04_session_login.php" class="user-log-text">登入</a></li>
+            </ul>
+        </div>
+        <!-- 標頭區end -->
+        <!-- 選單start -->
+        <div class="nav">
+            <!-- 漢堡選單start -->
+            <label for="switch"><img src="./images/icon/burger.png" ></label>
+            <!-- 漢堡選單開關 -->
+            <input type="checkbox" id="switch"> 
+            <!-- 漢堡選單end -->
+            <ul class="div-user-list" id="">
+                <li class="user-log-list"><a href="#" class="list-a"><p class="user-log-list-text">關於我們</p></a></li>
+                <li class="user-log-list"><a href="#" class="list-a"><p href="#" class="user-log-list-text">最新消息</p></a>
+                    <ul class="option-cont">
+                        <a href="#" class="list-a" id="list-a"><li>活動資訊</li></a>
+                        <a href="#" class="list-a" id="list-a"><li>優惠資訊</li></a>
+                    </ul>
+                </li>
+                <li class="user-log-list"><a href="#" class="list-a"><p href="#" class="user-log-list-text">熱點夯地</p></a>
+                    <ul class="option-cont">
+                        <a href="#" class="list-a" id="list-a"><li>大溪老街</li></a>
+                        <a href="#" class="list-a" id="list-a"><li>小烏來</li></a>
+                        <a href="#" class="list-a" id="list-a"><li>竹圍漁港</li></a>
+                    </ul>
+                </li>
+                <li class="user-log-list"><a href="#" class="list-a"><p href="#" class="user-log-list-text">交通路線</p></a></li>
+                <li class="user-log-list"><a href="#" class="list-a"><p href="#" class="user-log-list-text">連絡我們</p></a></li>
+            </ul>
+        </div>
+        <!-- 選單end -->
+        <!-- 內文區start -->
+        <aside>
+            <!-- 內文大圖start -->
+            <div id="aside-div" >
+                <div id="div-show">
+                    <img src="./images/pic_1.jpg" class="aside-big-img" id="show" >
+                    <div id="div-select" >
+                    </div>
+                    <div id="btnPrev"></div>
+                    <div id="btnNext"></div>
+                </div>
+            </div>
+            <!-- 內文大圖end -->
+            <!-- 內文選單start -->
+            <section class="aside-section" id="aside-section">
+                <div class="aside-title" id="aside-title">
+                    <p><a href="#" id="walk">休閒健走</a></p>
+                    <p><a href="#" id="tourism">觀光工廠</a></p>
+                    <p><a href="#" id="buy">夜市購物</a></p>
+                </div>
+                <div class="aside-flex" id="aside-flex"></div>
+                <div class="aside-detil" id="aside-detil"></div>
+            </section>
+            <!-- 內文選單end -->
+        </aside>
+        <!-- 內文區end -->
+        <footer class="footer">
+            <h2> travelPlus旅遊網</h2>
+            <p>Copyright © 2020 travelPlus旅遊網 版權所有</p>
+        </footer>
+    </div>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>

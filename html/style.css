@@ -1,0 +1,380 @@
+body{
+    background-color:white;
+    margin: 0px;
+} 
+/* header 標頭區start */
+.div-main-area{
+    /* width: 1200px; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    /* 標頭圖片start */
+.header-img-back{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0.3)),url(./img/許厝港溼地.jpg) ;
+    background-position:  right 35% bottom 58%;
+    background-size:cover;
+    margin: 0px auto;
+}
+    /* 標頭圖片end */
+.header-img-back span a{
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+}
+.div-user-log{
+    display: flex;
+    position: absolute;
+    /* left: 1230px; */
+    left: 80%;
+    top: 5px; 
+}
+/* header 標頭區end */
+/*  選單區start */
+.nav{
+    /* background-color: #795d59; */
+    /* background-color: #a39466; */
+    background-color: #596235;
+    overflow: hidden;    
+}
+.nav label{
+    display: none;
+}
+.nav input{
+    display: none;
+}
+.div-user-list{  
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    justify-content: center;
+} 
+.user-log-list{
+    list-style: none;
+    margin-right: 30px;
+}
+.user-log-list-text{
+    display: block;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    background-color: #cab29c;
+    border: 1px black solid;
+    border-radius: 6px;
+    margin-right: 45px;
+    margin-bottom: 0px;
+}
+.option-cont{
+    position:absolute;
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+.option-cont li {
+    background-color: #cab29c;
+    border: 1px black solid;
+    width: 100px;
+    color: black;
+    padding: 10px; 
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.list-a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 2;
+}
+.user-log-list-text:hover{
+    background-color: orange;
+    color: white;
+}
+.option-cont li:hover{
+    background-color: orange;
+    color: white;
+}
+/* 選單區end */
+/* aside 內文區start */
+    /* 分類列表 */
+.aside-p{
+    text-align: center;
+    font-size:x-large;
+    line-height: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.aside-section{
+    /* background-color: #a39466; */
+    background-color: #94a7ae;
+    /* background-color: #F4EAD5; */
+    
+    padding: 20px 75px; 
+}
+.aside-title{
+    display: flex;
+    background-color:#795d59;
+    /* background-color:#2f3020; */
+    
+    margin-bottom: 20px;
+    justify-content:space-around;
+    height: 80px;
+    border-radius: 30px;
+}
+.aside-title a{
+    text-decoration: none;
+}
+.aside-section .aside-title p{
+    display: block;
+    background-color: goldenrod;
+    width: 100px;
+    text-align: center;
+    line-height:50px;
+    border-radius: 30px;
+}
+    /* 景點圖 */
+.aside-big-img{
+    width: 1200px;
+    height: 525px;
+    margin-bottom: -5px;
+}
+.aside-flex{
+    display: flex;
+    flex-flow:wrap;
+    margin-left: 15px;
+    justify-content:space-around;
+}
+.aside-div-area{
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.aside-div-area img{
+    width: 270px;
+    height: 200px;
+    transform:scale(1,1);transition: all 1s ease-out;
+}
+.aside-div-area img:hover{
+    transform:scale(1.1,1.1);
+}
+.aside-div-area h3{
+    margin-right: 25px;
+    font-size: 25px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+.aside-div-area a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+.aside-div-img{
+    margin: 5px 0;
+    width: 300px;
+    height: 150px;
+}
+    /* 輪播圖start */
+#div-show {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    text-align: center;
+}
+#btnPrev {
+    width: 30px;
+    height: 30px;
+    background-image: url("images/icon/prev.png");
+    background-size: cover;
+    position: absolute;
+    top: 40%;
+    left: 5px;
+}
+#btnNext {
+    width: 30px;
+    height: 30px;
+    background-image: url("images/icon/next.png");
+    background-size: cover;
+    position: absolute;
+    top: 40%;
+    right: 5px;
+}
+#div-select {
+    width: 90%;
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    right: 10%;
+}
+#div-select div {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-left: 15px;
+}
+.round {
+    border-radius: 50%;
+    background-color: rgb(211, 211, 211,0.5);
+    transition: 1s;
+}
+.addBorder {
+    border-width: 2px;
+    border-color: blueviolet;
+    border-style: solid;
+    background-color: rgb(236, 171, 171);
+    margin-top: -10px;
+}
+    /* 輪播圖start */
+/* aside 內文區end */
+
+/*  */
+.div-1{
+    display: flex; 
+}
+.text-spac{
+    
+    letter-spacing: 2em;
+}
+.text-flex{
+    display: flex;
+    color: #2a2a2a;
+}
+.div-p{
+    margin: 17px 8px;
+}
+.map-a{
+    color: #e6007a!important;
+}
+.map-p{
+    color: black;
+}
+.map-p:hover{
+    color: red;
+}
+.time-li{
+    list-style: none;
+    margin-left: -40px;
+    margin-bottom: 8px;
+}
+.not-list{
+    list-style: square;
+}
+/*  */
+
+/* footer 尾文區start */
+.footer{
+    background-color: #514133;
+    padding: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+    
+}
+footer span{
+    padding-left: 80%;
+    font-size: x-large;
+}
+/* footer 尾文區start */
+/* RWD */
+@media(max-width:1430px){
+    /* 整體 */
+    .div-main-area{
+        /* width:900px; */
+        width:100%;
+    };
+
+    /* 標頭圖片  */
+    .header-img-back{
+        /* width: 900px; */
+        width:100%;
+
+        }
+    /* 輪播圖 */
+    .aside-big-img{width: 900px;}
+    /* 輪播圖點點 */
+    #div-select {
+        width: 90%;
+        position: absolute;
+        top: 90%;
+        left: 20%;
+        right: 10%;
+    }
+    /* 選單 */
+    .user-log-list-text{margin-right: 20px;}
+}
+@media(max-width:930px){
+    /* 整體 */
+    .div-main-area{
+        /* width:700px; */
+        width:100%;
+    };
+
+    /* 標頭圖片 */
+    .header-img-back{
+        /* width: 700px; */
+        width: 100%;
+    }
+    /* 輪播圖 */
+    .aside-big-img{
+        width: 700px;
+        width: 100%;
+    }
+    /* 選單 */
+    .user-log-list-text{
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+    /* 輪播圖的點點 */
+    #div-select div{margin-left: 5px;}
+}
+@media(max-width:731px){
+    /* 整體 */
+    .div-main-area{
+        /* width:450px; */
+        width:100%;
+    };
+    /* 標頭圖片  */
+    .header-img-back{
+        /* width: 450px; */
+        width: 100%;
+    }
+
+    /* 最上方會員log */
+    .div-user-log{left: 60%;}
+    /* 輪播圖 */
+    .aside-big-img{
+        /* width: 450px; */
+        width: 100%;
+    }
+    /* 選單變漢堡 */
+    .div-user-list{display: none;}
+    #list-a{display: none;}
+    /* 漢堡選單 */
+    .nav label{
+        display: block;
+        margin-top: 7px;    
+        margin-left: 10px;
+        transition: .5s;
+    }
+    #switch:checked + .div-user-list{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    /* 輪播圖的點點 */
+    #div-select div{visibility: hidden;}
+}
+
